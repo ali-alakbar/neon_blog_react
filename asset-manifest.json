@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/neon_blog_react/static/css/main.f3c3532f.css",
-    "main.js": "/neon_blog_react/static/js/main.93910c5b.js",
+    "main.css": "/neon_blog_react/static/css/main.f8a92882.css",
+    "main.js": "/neon_blog_react/static/js/main.f1690080.js",
     "static/media/video.mp4": "/neon_blog_react/static/media/video.d28831bc5d9eeb4a9a44.mp4",
     "static/media/Ai Motion30.mp4": "/neon_blog_react/static/media/Ai Motion30.e4deb1b679ed8302e02b.mp4",
     "static/media/Ai Motion14.mp4": "/neon_blog_react/static/media/Ai Motion14.87b156edb301bc27e7b5.mp4",
@@ -15,11 +15,11 @@
     "static/media/Ai Motion12.mp4": "/neon_blog_react/static/media/Ai Motion12.802ad38987ff3269ee35.mp4",
     "static/media/logo.png": "/neon_blog_react/static/media/logo.6d99f2cfad756507a964.png",
     "index.html": "/neon_blog_react/index.html",
-    "main.f3c3532f.css.map": "/neon_blog_react/static/css/main.f3c3532f.css.map",
-    "main.93910c5b.js.map": "/neon_blog_react/static/js/main.93910c5b.js.map"
+    "main.f8a92882.css.map": "/neon_blog_react/static/css/main.f8a92882.css.map",
+    "main.f1690080.js.map": "/neon_blog_react/static/js/main.f1690080.js.map"
   },
   "entrypoints": [
-    "static/css/main.f3c3532f.css",
-    "static/js/main.93910c5b.js"
+    "static/css/main.f8a92882.css",
+    "static/js/main.f1690080.js"
   ]
 }
