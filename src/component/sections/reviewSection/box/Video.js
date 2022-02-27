@@ -1,7 +1,11 @@
 import React from "react";
 const Video = (props) => {
   return (
-    <div className={"videoContainer"}>
+    <div
+      className={
+        props.pageName === "home" ? `videoContainer ${'myActive'}` : "videoContainer"
+      }
+    >
       <video
         autoPlay
         muted

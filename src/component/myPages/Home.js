@@ -15,6 +15,7 @@ class Home extends Component {
     return (
       <div style={this.handleChangeBackground()} id="home" className="home">
         <LandingPage
+          pageName={"home"}
           title={data["landing page"].homePage.title}
           description={data["landing page"].homePage.description}
           myVideo={data["landing page"].homePage.media}
@@ -23,24 +24,19 @@ class Home extends Component {
         />
         <WaveSection myVideo={data.waveSection.homePage.media} />
         <MyReview
+          pageName={"home"}
           title={data["MyReview"].homePage.title}
           description={data["MyReview"].homePage.description}
           myVideo={data["MyReview"].homePage.media}
         />
         <LandingPage
-          name={"third"}
+          pageName={"home"}
           title={data["landing page"].homePage.title2}
           description={data["landing page"].homePage.description2}
           myVideo={data["landing page"].homePage.media2}
           btnTitle={"Sign In"}
           btnTitle2={"Rejester"}
         />
-        {/* <MyReview
-          name={"third"}
-          title={data["MyReview"].homePage.title}
-          description={data["MyReview"].homePage.description}
-          myVideo={data["MyReview"].homePage.media2}
-        /> */}
         <Footer styleBackground={{ background: "#0a0117" }} />
       </div>
     );

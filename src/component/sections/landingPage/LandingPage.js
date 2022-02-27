@@ -26,9 +26,8 @@ class LandingPage extends Component {
             btnTitle2={this.props.btnTitle2}
           />
           <Video
-            name={this.props.name}
-            newVideoProps={require(`${this.props.myVideo}`)}
             pageName={this.props.pageName}
+            newVideoProps={require(`${this.props.myVideo}`)}
           />
         </div>
       </section>

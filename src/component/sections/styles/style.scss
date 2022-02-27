@@ -1,4 +1,14 @@
 @import "../../../App.scss";
+
+@mixin myActive {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0px;
+  width: 100%;
+  height: 100%;
+}
+
 // ================= Start Landing Page  =================
 .video-section {
   height: fit-content;
@@ -64,9 +74,8 @@
 
     .videoContainer {
       width: 800px;
-
       position: relative;
-      
+
       .videoClass {
         width: 100%;
         display: inline-block;
@@ -76,7 +85,17 @@
     }
   }
 }
-
+.myActive {
+  &::before {
+    @include myActive();
+    background: radial-gradient(
+      closest-side,
+      rgba(9, 1, 24, 0) 0%,
+      rgba(9, 1, 24, 0) 89%,
+      $--mainBackground 102%
+    );
+  }
+}
 // Big Screen
 @media (max-width: 1200px) {
   .video-section {
@@ -155,7 +174,21 @@
   .videoContainer {
     position: relative;
     text-align: center;
-
+    &::before {
+      content: "";
+      position: absolute;
+      top: -160px;
+      left: 0px;
+      width: 100%;
+      height: 88%;
+      z-index: 2;
+      background: radial-gradient(
+        closest-side,
+        rgba(9, 1, 24, 0) 0%,
+        rgba(9, 1, 24, 0) 79%,
+        $--mainBackground 102%
+      );
+    }
     #myVideo {
       transition: $--mainTransition;
       position: relative;
@@ -192,9 +225,23 @@
   }
 }
 
+// Big Screen
+@media (max-width: 1200px) {
+  .wave-section {
+    .videoContainer {
+      &::before {
+        height: 84%;
+      }
+    }
+  }
+}
+
 @media (max-width: 768px) {
   .wave-section {
     .videoContainer {
+      &::before {
+        height: 82%;
+      }
       #myVideo {
         top: -80px;
       }
@@ -218,6 +265,8 @@
     align-items: center;
     .videoContainer {
       width: 700px;
+      width: 600px;
+      position: relative;
 
       #myVideo {
         width: 100%;
@@ -226,29 +275,23 @@
         object-fit: fill;
       }
     }
+    .myActive {
+      &::before {
+        @include myActive();
+        background: radial-gradient(
+          closest-side,
+          rgba(9, 1, 24, 0) 0%,
+          rgba(9, 1, 24, 0) 89%,
+          $--mainBackground 140%
+        );
+      }
+    }
     .description {
       order: 1;
     }
   }
 }
-.myActive {
-  width: 600px;
-  position: relative;
-  &::before {
-        content: "";
-        position: absolute;
-        top: 0;
-        left: 0px;
-        width: 100%;
-        height: 100%;
-        background: radial-gradient(
-          closest-side,
-          rgba(9, 1, 24, 0) 0%,
-          rgba(9, 1, 24, 0) 89%,
-          $--mainBackground 102%
-        );
-      }
-}
+
 // Medium Screen
 @media (max-width: 992px) {
   .myReview-section {

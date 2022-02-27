@@ -14,7 +14,10 @@ class MyReview extends Component {
             newDesProps={this.props.description}
             isThird={this.props.name}
           />
-          <Video newVideoProps={require(`${this.props.myVideo}`)} />
+          <Video
+            newVideoProps={require(`${this.props.myVideo}`)}
+            pageName={this.props.pageName}
+          />
         </div>
       </section>
     );

@@ -232,6 +232,16 @@ input {
      object-fit: fill;
 }
 
+.myActive::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0px;
+  width: 100%;
+  height: 100%;
+  background: radial-gradient(closest-side, rgba(9, 1, 24, 0) 0%, rgba(9, 1, 24, 0) 89%, #090017 102%);
+}
+
 @media (max-width: 1200px) {
   .video-section .container .videoContainer {
     width: 700px;
@@ -316,6 +326,17 @@ input {
   text-align: center;
 }
 
+.wave-section .videoContainer::before {
+  content: "";
+  position: absolute;
+  top: -160px;
+  left: 0px;
+  width: 100%;
+  height: 88%;
+  z-index: 2;
+  background: radial-gradient(closest-side, rgba(9, 1, 24, 0) 0%, rgba(9, 1, 24, 0) 79%, #090017 102%);
+}
+
 .wave-section .videoContainer #myVideo {
   -webkit-transition: all 0.3s ease-in-out;
   transition: all 0.3s ease-in-out;
@@ -367,7 +388,16 @@ input {
           animation-name: change;
 }
 
+@media (max-width: 1200px) {
+  .wave-section .videoContainer::before {
+    height: 84%;
+  }
+}
+
 @media (max-width: 768px) {
+  .wave-section .videoContainer::before {
+    height: 82%;
+  }
   .wave-section .videoContainer #myVideo {
     top: -80px;
   }
@@ -397,6 +427,8 @@ input {
 
 .myReview-section .container .videoContainer {
   width: 700px;
+  width: 600px;
+  position: relative;
 }
 
 .myReview-section .container .videoContainer #myVideo {
@@ -407,25 +439,20 @@ input {
      object-fit: fill;
 }
 
-.myReview-section .container .description {
-  -webkit-box-ordinal-group: 2;
-      -ms-flex-order: 1;
-          order: 1;
-}
-
-.myActive {
-  width: 600px;
-  position: relative;
-}
-
-.myActive::before {
+.myReview-section .container .myActive::before {
   content: "";
   position: absolute;
   top: 0;
   left: 0px;
   width: 100%;
   height: 100%;
-  background: radial-gradient(closest-side, rgba(9, 1, 24, 0) 0%, rgba(9, 1, 24, 0) 89%, #090017 102%);
+  background: radial-gradient(closest-side, rgba(9, 1, 24, 0) 0%, rgba(9, 1, 24, 0) 89%, #090017 140%);
+}
+
+.myReview-section .container .description {
+  -webkit-box-ordinal-group: 2;
+      -ms-flex-order: 1;
+          order: 1;
 }
 
 @media (max-width: 992px) {

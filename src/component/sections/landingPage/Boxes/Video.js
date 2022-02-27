@@ -3,7 +3,9 @@ const Video = (props) => {
   return (
     <div
       className={
-        props.name === "third" ? `videoContainer ${"myActive"}` : "videoContainer"
+        props.pageName === "home"
+          ? `videoContainer ${"myActive"}`
+          : "videoContainer"
       }
       style={{
         width: props.pageName === "signUp" ? "100%" : "",
