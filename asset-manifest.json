@@ -1,0 +1,25 @@
+{
+  "files": {
+    "main.css": "/neon_blog_react/static/css/main.f3c3532f.css",
+    "main.js": "/neon_blog_react/static/js/main.93910c5b.js",
+    "static/media/video.mp4": "/neon_blog_react/static/media/video.d28831bc5d9eeb4a9a44.mp4",
+    "static/media/Ai Motion30.mp4": "/neon_blog_react/static/media/Ai Motion30.e4deb1b679ed8302e02b.mp4",
+    "static/media/Ai Motion14.mp4": "/neon_blog_react/static/media/Ai Motion14.87b156edb301bc27e7b5.mp4",
+    "static/media/Ai Motion32.mp4": "/neon_blog_react/static/media/Ai Motion32.41db78e9abeaf3dc0ac7.mp4",
+    "static/media/Ai Motion27.mp4": "/neon_blog_react/static/media/Ai Motion27.defba98de4d185596adf.mp4",
+    "static/media/Ai Motion5.mp4": "/neon_blog_react/static/media/Ai Motion5.c5391de3a2cfa372bada.mp4",
+    "static/media/new-video.webm": "/neon_blog_react/static/media/new-video.e874c7fc4465c1cb027a.webm",
+    "static/media/Ai Motion15.mp4": "/neon_blog_react/static/media/Ai Motion15.43c2a593eb8955cad60a.mp4",
+    "static/media/Ai Motion.mp4": "/neon_blog_react/static/media/Ai Motion.ee19fc6a6c0fb2160e00.mp4",
+    "static/media/wave2.mp4": "/neon_blog_react/static/media/wave2.1e192858f6043da79a70.mp4",
+    "static/media/Ai Motion12.mp4": "/neon_blog_react/static/media/Ai Motion12.802ad38987ff3269ee35.mp4",
+    "static/media/logo.png": "/neon_blog_react/static/media/logo.6d99f2cfad756507a964.png",
+    "index.html": "/neon_blog_react/index.html",
+    "main.f3c3532f.css.map": "/neon_blog_react/static/css/main.f3c3532f.css.map",
+    "main.93910c5b.js.map": "/neon_blog_react/static/js/main.93910c5b.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.f3c3532f.css",
+    "static/js/main.93910c5b.js"
+  ]
+}
