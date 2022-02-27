@@ -1,0 +1,124 @@
+@-webkit-keyframes change {
+  30% {
+    color: #000;
+  }
+  55% {
+    color: #fff;
+  }
+  60% {
+    color: #000;
+  }
+  75% {
+    color: #fff;
+  }
+  80% {
+    color: #000;
+  }
+}
+
+@keyframes change {
+  30% {
+    color: #000;
+  }
+  55% {
+    color: #fff;
+  }
+  60% {
+    color: #000;
+  }
+  75% {
+    color: #fff;
+  }
+  80% {
+    color: #000;
+  }
+}
+
+@-webkit-keyframes change2 {
+  30% {
+    color: #fff;
+  }
+  55% {
+    color: #000;
+  }
+  60% {
+    color: #fff;
+  }
+  75% {
+    color: #000;
+  }
+  80% {
+    color: #fff;
+  }
+}
+
+@keyframes change2 {
+  30% {
+    color: #fff;
+  }
+  55% {
+    color: #000;
+  }
+  60% {
+    color: #fff;
+  }
+  75% {
+    color: #000;
+  }
+  80% {
+    color: #fff;
+  }
+}
+
+/* Start Screen Responsive */
+/* Small Screens */
+@media (min-width: 768px) {
+  .container {
+    width: 750px;
+  }
+}
+
+/* Medium Screens */
+@media (min-width: 992px) {
+  .container {
+    width: 970px;
+  }
+}
+
+/* Big Screens */
+@media (min-width: 1200px) {
+  .container {
+    width: 1170px;
+  }
+}
+
+/* End Screen Responsive */
+.container {
+  padding: 0 80px;
+  margin: 0 auto;
+}
+
+.disable {
+  display: none;
+}
+
+* {
+  padding: 0%;
+  margin: 0;
+  box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  list-style: none;
+  text-decoration: none;
+}
+
+body {
+  font-family: "Lato", "Helvetica";
+  background-color: #090017;
+}
+
+input {
+  outline: none;
+}
+/*# sourceMappingURL=App.css.map */

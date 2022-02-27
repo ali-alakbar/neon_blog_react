@@ -1,0 +1,139 @@
+@import "../../../App";
+// ================= Start Navigation Bar =================
+.navBar {
+  z-index: 22222;
+  background-color: $--mainBackgroundTwo;
+  height: 13vh;
+  transition: $--mainTransition;
+  .container {
+    display: flex;
+    justify-content: space-between;
+    height: 100%;
+    align-items: center;
+    padding: 0 30px;
+    .logoContainer {
+      width: 2.5em;
+      img {
+        width: 100%;
+      }
+    }
+
+    .leftSide {
+      display: flex;
+      .iconContainer {
+        display: none;
+        margin-left: 2rem;
+        order: 1;
+        .icon-bar {
+          cursor: pointer;
+          color: $--mainLinkColor;
+          transition: $--mainTransition;
+          &:hover {
+            color: $--mainLinkColorHover;
+          }
+        }
+      }
+      ul {
+        display: flex;
+        flex-direction: row-reverse;
+        li {
+          a {
+            font-size: 10px;
+            font-weight: 900;
+            padding-left: 15px;
+            padding-right: 15px;
+            color: $--mainLinkColor;
+            letter-spacing: 1px;
+            text-transform: uppercase;
+            cursor: pointer;
+            transition: $--mainTransition;
+            &:not(.icon) {
+              padding-left: 35px;
+              padding-right: 35px;
+            }
+            &:hover {
+              color: $--mainLinkColorHover;
+            }
+          }
+          .active {
+            color: $--mainLinkColorHover;
+            font-size: 12px;
+          }
+          .icon {
+            transition: inherit;
+            font-size: 14px;
+          }
+        }
+        .signUp {
+          padding: 10px 40px;
+          margin: 0 20px;
+          background: $--mainBtnBackgroundDark;
+          color: $--mainWhite;
+          @include btn;
+          &:hover {
+            background-color: $--mainWhite;
+            color: $--mainBlack;
+            animation-duration: 300ms;
+            animation-name: change;
+          }
+        }
+      }
+      .myListOne {
+        order: 1;
+      }
+    }
+  }
+}
+/* Small Screens */
+@media (max-width: 768px) {
+  .navBar {
+    .container {
+      .leftSide {
+        .iconContainer {
+          display: block;
+        }
+        .myListTwo {
+          display: grid;
+          position: absolute;
+          top: 0;
+          left: 0;
+          justify-items: center;
+          background-color: #02020e;
+          width: 100%;
+          height: 0;
+          padding: 0;
+          transition: $--mainTransition;
+          opacity: 0;
+          z-index: 3;
+          pointer-events: none;
+
+          li {
+            a {
+              font-size: 20px;
+            }
+          }
+          .signUp {
+            padding: 10px 30px;
+            border: inherit;
+            background: inherit;
+            color: $--mainLinkColor;
+            &:hover {
+              background-color: unset;
+              color: $--mainLinkColorHover;
+              box-shadow: unset !important;
+              animation-name: none;
+            }
+          }
+        }
+        .active {
+          opacity: 1;
+          top: 80px;
+          height: 100%;
+          padding: 50px 0;
+          pointer-events: inherit;
+        }
+      }
+    }
+  }
+}
+// ================= End Navigation Bar =================

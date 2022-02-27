@@ -1,0 +1,303 @@
+@-webkit-keyframes change {
+  30% {
+    color: #000;
+  }
+  55% {
+    color: #fff;
+  }
+  60% {
+    color: #000;
+  }
+  75% {
+    color: #fff;
+  }
+  80% {
+    color: #000;
+  }
+}
+
+@keyframes change {
+  30% {
+    color: #000;
+  }
+  55% {
+    color: #fff;
+  }
+  60% {
+    color: #000;
+  }
+  75% {
+    color: #fff;
+  }
+  80% {
+    color: #000;
+  }
+}
+
+@-webkit-keyframes change2 {
+  30% {
+    color: #fff;
+  }
+  55% {
+    color: #000;
+  }
+  60% {
+    color: #fff;
+  }
+  75% {
+    color: #000;
+  }
+  80% {
+    color: #fff;
+  }
+}
+
+@keyframes change2 {
+  30% {
+    color: #fff;
+  }
+  55% {
+    color: #000;
+  }
+  60% {
+    color: #fff;
+  }
+  75% {
+    color: #000;
+  }
+  80% {
+    color: #fff;
+  }
+}
+
+/* Start Screen Responsive */
+/* Small Screens */
+@media (min-width: 768px) {
+  .container {
+    width: 750px;
+  }
+}
+
+/* Medium Screens */
+@media (min-width: 992px) {
+  .container {
+    width: 970px;
+  }
+}
+
+/* Big Screens */
+@media (min-width: 1200px) {
+  .container {
+    width: 1170px;
+  }
+}
+
+/* End Screen Responsive */
+.container {
+  padding: 0 80px;
+  margin: 0 auto;
+}
+
+.disable {
+  display: none;
+}
+
+* {
+  padding: 0%;
+  margin: 0;
+  box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  list-style: none;
+  text-decoration: none;
+}
+
+body {
+  font-family: "Lato", "Helvetica";
+  background-color: #090017;
+}
+
+input {
+  outline: none;
+}
+
+.navBar {
+  z-index: 22222;
+  background-color: #02020e;
+  height: 13vh;
+  -webkit-transition: all 0.3s ease-in-out;
+  transition: all 0.3s ease-in-out;
+}
+
+.navBar .container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  height: 100%;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding: 0 30px;
+}
+
+.navBar .container .logoContainer {
+  width: 2.5em;
+}
+
+.navBar .container .logoContainer img {
+  width: 100%;
+}
+
+.navBar .container .leftSide {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.navBar .container .leftSide .iconContainer {
+  display: none;
+  margin-left: 2rem;
+  -webkit-box-ordinal-group: 2;
+      -ms-flex-order: 1;
+          order: 1;
+}
+
+.navBar .container .leftSide .iconContainer .icon-bar {
+  cursor: pointer;
+  color: #4656a6;
+  -webkit-transition: all 0.3s ease-in-out;
+  transition: all 0.3s ease-in-out;
+}
+
+.navBar .container .leftSide .iconContainer .icon-bar:hover {
+  color: #9babff;
+}
+
+.navBar .container .leftSide ul {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: reverse;
+      -ms-flex-direction: row-reverse;
+          flex-direction: row-reverse;
+}
+
+.navBar .container .leftSide ul li a {
+  font-size: 10px;
+  font-weight: 900;
+  padding-left: 15px;
+  padding-right: 15px;
+  color: #4656a6;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+  cursor: pointer;
+  -webkit-transition: all 0.3s ease-in-out;
+  transition: all 0.3s ease-in-out;
+}
+
+.navBar .container .leftSide ul li a:not(.icon) {
+  padding-left: 35px;
+  padding-right: 35px;
+}
+
+.navBar .container .leftSide ul li a:hover {
+  color: #9babff;
+}
+
+.navBar .container .leftSide ul li .active {
+  color: #9babff;
+  font-size: 12px;
+}
+
+.navBar .container .leftSide ul li .icon {
+  -webkit-transition: inherit;
+  transition: inherit;
+  font-size: 14px;
+}
+
+.navBar .container .leftSide ul .signUp {
+  padding: 10px 40px;
+  margin: 0 20px;
+  background: #0d0e1f;
+  color: #fff;
+  border: solid 1px;
+  border-radius: 20px;
+  border-color: rgba(155, 171, 255, 0.3);
+  cursor: pointer;
+  -webkit-transition: all 0.3s ease-in-out;
+  transition: all 0.3s ease-in-out;
+}
+
+.navBar .container .leftSide ul .signUp:hover {
+  -webkit-box-shadow: 0 0 1em 1em rgba(255, 255, 255, 0.04);
+          box-shadow: 0 0 1em 1em rgba(255, 255, 255, 0.04);
+}
+
+.navBar .container .leftSide ul .signUp:hover {
+  background-color: #fff;
+  color: #000;
+  -webkit-animation-duration: 300ms;
+          animation-duration: 300ms;
+  -webkit-animation-name: change;
+          animation-name: change;
+}
+
+.navBar .container .leftSide .myListOne {
+  -webkit-box-ordinal-group: 2;
+      -ms-flex-order: 1;
+          order: 1;
+}
+
+/* Small Screens */
+@media (max-width: 768px) {
+  .navBar .container .leftSide .iconContainer {
+    display: block;
+  }
+  .navBar .container .leftSide .myListTwo {
+    display: -ms-grid;
+    display: grid;
+    position: absolute;
+    top: 0;
+    left: 0;
+    justify-items: center;
+    background-color: #02020e;
+    width: 100%;
+    height: 0;
+    padding: 0;
+    -webkit-transition: all 0.3s ease-in-out;
+    transition: all 0.3s ease-in-out;
+    opacity: 0;
+    z-index: 3;
+    pointer-events: none;
+  }
+  .navBar .container .leftSide .myListTwo li a {
+    font-size: 20px;
+  }
+  .navBar .container .leftSide .myListTwo .signUp {
+    padding: 10px 30px;
+    border: inherit;
+    background: inherit;
+    color: #4656a6;
+  }
+  .navBar .container .leftSide .myListTwo .signUp:hover {
+    background-color: unset;
+    color: #9babff;
+    -webkit-box-shadow: unset !important;
+            box-shadow: unset !important;
+    -webkit-animation-name: none;
+            animation-name: none;
+  }
+  .navBar .container .leftSide .active {
+    opacity: 1;
+    top: 80px;
+    height: 100%;
+    padding: 50px 0;
+    pointer-events: inherit;
+  }
+}
+/*# sourceMappingURL=style.css.map */

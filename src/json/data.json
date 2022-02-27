@@ -1,0 +1,48 @@
+{
+
+    "landing page" : {
+        "homePage": {
+            "title" : "MyAkbar for IT consultant & Services",
+            "title2" : "Section Three",
+            "description":"Boost up Your Work With our Services. My Incredible Team is Here to Save Your Time and Money.",
+            "description2" : "This was designed to push the limits of innovation. Our team is inventing the future.",
+            "media": "./landingMedia/video/Ai Motion5.mp4",
+            "media2": "./landingMedia/video/new-video.webm"
+        },
+        "Contact" : {
+            "title" : "We Are Online!",
+            "description":"We Are Online, Don't Hesitate to Get in Touch With us. Contact Us And Get Your Free Digital Identity.",
+            "media": "./landingMedia/video/Ai Motion.mp4"
+        },
+        "About" : {
+            "title" : "Hi, I'm Ali ",
+            "description":"I'm a Software Developer, I Build Software That Everyone Love to See and Experience. Building Software is Like Heaven to me. Check my Website: myAkbar.com",
+            "media": "./landingMedia/video/Ai Motion14.mp4"
+        },
+        "SignUp": {
+            "media": "./landingMedia/video/video.mp4"
+        }
+        
+    },
+    "waveSection" : {
+        "homePage" : {
+            "media" : "./waveMedia/Ai Motion32.mp4"
+        }
+    },
+    "MyReview" : {
+        "homePage": {
+            "title" : "Impress Everyone",
+            "description":"I am Excited to Show You The Hottest Brand New Technologies to Ease Your Life. Using These Products Allows You to Be The Ideal Modren Mega Person. That Means That You Will be Considerably Immersed With The Society, And Surrounded With Day-to-Day Advertisements.",
+            "media": "./reviewMedia/video/Ai Motion30.mp4",
+            "media2": "./reviewMedia/video/new-video.webm"
+        },
+        "About" : {
+            "title" : "Why me?",
+            "description":"Most People Make Mistakes Since They Don't Seek Expert Advice. Nerds Have Always Been Developing Things That Changed The Game.",
+            "media": "./reviewMedia/video/Ai Motion15.mp4"
+        }
+    }
+
+}
+
+

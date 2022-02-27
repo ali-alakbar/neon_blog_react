@@ -1,0 +1,413 @@
+@import "../../../App.scss";
+// ================= Start Landing Page  =================
+.video-section {
+  height: fit-content;
+  margin: 9em 0;
+  .container {
+    display: grid;
+    grid-template-columns: auto auto;
+    align-items: center;
+    height: 100%;
+    color: $--mainWhite;
+
+    .description {
+      font-family: "Heebo", sans-serif;
+      .landingTitle {
+        font-weight: 300;
+        font-size: 35px;
+        margin-bottom: 1rem;
+      }
+      .landingDesc {
+        width: 350px;
+        font-size: 18px;
+        font-weight: 300;
+        margin-bottom: 3rem;
+        color: $--mainLinkColorHover;
+      }
+      .btnContainer {
+        display: flex;
+        gap: 1rem;
+        button {
+          @include btn;
+          font-weight: 600;
+          padding: 8px 0;
+          width: 10rem;
+          font-size: 10px;
+          text-transform: uppercase;
+          letter-spacing: 2px;
+          &:hover {
+            box-shadow: 0 0 1em 1em rgba(255, 255, 255, 0.07);
+          }
+        }
+        .btn-one {
+          color: $--mainBackground;
+          &:hover {
+            background-color: $--mainBtnBackgroundDark;
+            color: $--mainWhite;
+            animation-duration: 300ms;
+            animation-name: change2;
+          }
+        }
+        .btn-two {
+          background-color: $--mainBtnBackgroundDark;
+          color: $--mainWhite;
+          font-style: italic;
+          &:hover {
+            background-color: $--mainWhite;
+            color: $--mainBlack;
+            animation-duration: 300ms;
+            animation-name: change;
+          }
+        }
+      }
+    }
+
+    .videoContainer {
+      width: 800px;
+
+      position: relative;
+      
+      .videoClass {
+        width: 100%;
+        display: inline-block;
+        vertical-align: baseline;
+        object-fit: fill;
+      }
+    }
+  }
+}
+
+// Big Screen
+@media (max-width: 1200px) {
+  .video-section {
+    .container {
+      .videoContainer {
+        width: 700px;
+        .videoClass {
+          width: 100%;
+        }
+      }
+    }
+  }
+}
+// Medium Screen
+@media (max-width: 992px) {
+  .video-section {
+    .container {
+      display: grid;
+      grid-template-columns: inherit !important;
+      justify-content: center;
+      height: 100%;
+      color: $--mainWhite;
+      .description {
+        display: inline-grid;
+        text-align: center;
+        justify-items: center;
+        .btnContainer {
+          flex-direction: row;
+          .btn {
+            padding: 15px 0;
+          }
+        }
+      }
+
+      .videoContainer {
+        width: 800px;
+      }
+    }
+  }
+}
+// Small Screen
+@media (max-width: 768px) {
+  .video-section {
+    .container {
+      align-content: center;
+      .description {
+        display: inline-grid;
+        text-align: center;
+        justify-items: center;
+        .btnContainer {
+          flex-direction: column;
+          .btn {
+            padding: 15px 0;
+          }
+        }
+      }
+      .videoContainer {
+        width: 100% !important;
+        position: relative;
+        top: 4em;
+      }
+    }
+  }
+}
+@media (max-height: 668px) {
+  .video-section {
+    margin-top: 5em;
+  }
+}
+// ================= End Landing Page =================
+
+// ================= Start Wave Section =================
+.wave-section {
+  font-family: "Heebo", sans-serif;
+  padding: 6rem 0;
+  .videoContainer {
+    position: relative;
+    text-align: center;
+
+    #myVideo {
+      transition: $--mainTransition;
+      position: relative;
+      top: -160px;
+      width: 100%;
+      opacity: 1;
+    }
+    .waveTitle {
+      color: $--mainWhite;
+      font-weight: 300;
+      font-size: 35px;
+      position: relative;
+      top: -50px;
+    }
+    .btn-send {
+      @include btn();
+      font-weight: 600;
+      padding: 15px 0px;
+      width: 11rem;
+      font-size: 10px;
+      text-transform: uppercase;
+      letter-spacing: 2px;
+      margin-bottom: 2rem;
+      background-color: $--mainBtnBackgroundDark;
+      color: $--mainWhite;
+      &:hover {
+        background-color: $--mainWhite;
+        box-shadow: 0 0 1em 1em rgba(255, 255, 255, 0.07);
+        color: $--mainBlack;
+        animation-duration: 300ms;
+        animation-name: change;
+      }
+    }
+  }
+}
+
+@media (max-width: 768px) {
+  .wave-section {
+    .videoContainer {
+      #myVideo {
+        top: -80px;
+      }
+      .waveTitle {
+        top: 0;
+        font-size: 25px;
+        margin-bottom: 2em;
+      }
+    }
+  }
+}
+// ================= End Wave Section =================
+
+// ================= Start Review Section =================
+.myReview-section {
+  background-color: $--mainBackground;
+  margin: inherit;
+  height: fit-content;
+  .container {
+    display: flex;
+    align-items: center;
+    .videoContainer {
+      width: 700px;
+
+      #myVideo {
+        width: 100%;
+        display: inline-block;
+        vertical-align: baseline;
+        object-fit: fill;
+      }
+    }
+    .description {
+      order: 1;
+    }
+  }
+}
+.myActive {
+  width: 600px;
+  position: relative;
+  &::before {
+        content: "";
+        position: absolute;
+        top: 0;
+        left: 0px;
+        width: 100%;
+        height: 100%;
+        background: radial-gradient(
+          closest-side,
+          rgba(9, 1, 24, 0) 0%,
+          rgba(9, 1, 24, 0) 89%,
+          $--mainBackground 102%
+        );
+      }
+}
+// Medium Screen
+@media (max-width: 992px) {
+  .myReview-section {
+    .container {
+      display: grid;
+      .description {
+        right: inherit;
+        order: inherit;
+      }
+    }
+  }
+}
+
+// Small Screen
+
+@media (max-width: 768px) {
+  .myReview-section {
+    .container {
+      .videoContainer {
+        width: 100%;
+      }
+    }
+  }
+}
+
+// ================= End Review Section =================
+
+// ================= Start Contact Section =================
+.contact-section {
+  .container {
+    display: inline-flex;
+    justify-content: center;
+    width: 100%;
+
+    .myForm {
+      display: grid;
+      justify-items: center;
+      width: 60%;
+      .input {
+        background-color: #fff0;
+        color: $--mainLinkColor;
+        border: solid 1px $--mainLinkColor;
+        width: 100%;
+        font-size: 15px;
+        outline: none;
+        margin-bottom: 2rem;
+        transition: $--mainTransition;
+        text-transform: uppercase;
+        &:hover,
+        &:focus {
+          box-shadow: 0 0 1em 1em rgba(255, 255, 255, 0.07);
+          color: $--mainLinkColorHover;
+          border: solid 1px $--mainLinkColorHover;
+        }
+      }
+      textarea {
+        height: 136px;
+        resize: vertical;
+        max-height: 360px !important;
+        min-height: 130px !important;
+        padding: 3rem 1rem;
+      }
+      input {
+        height: 60px;
+        padding: 0 1rem;
+      }
+      button {
+        @include btn;
+        font-weight: 600;
+        padding: 11px 0;
+        border-radius: inherit;
+        width: 13rem;
+        font-size: 10px;
+        text-transform: uppercase;
+        letter-spacing: 2px;
+        background-color: $--mainBtnBackgroundDark;
+        color: $--mainWhite;
+        font-style: italic;
+        &:hover {
+          background-color: $--mainWhite;
+          color: $--mainBlack;
+          animation-duration: 300ms;
+          animation-name: change;
+        }
+      }
+    }
+  }
+}
+
+@media (max-width: 992px) {
+  .contact-section {
+    .container {
+      display: inherit;
+      .myForm {
+        width: 100%;
+      }
+    }
+  }
+}
+
+// ================= End Contact Section =================
+// ================= Start Footer Section =================
+.footer {
+  padding: 7rem 0 1rem;
+  background-color: $--mainBlack;
+  color: $--mainLinkColor;
+  .container > div {
+    font-size: 14px;
+  }
+  .container {
+    display: flex;
+    justify-content: space-between;
+
+    .callUs-number {
+      color: $--mainLinkColorHover;
+      margin-top: 2rem;
+      font-size: 16px;
+    }
+
+    ul {
+      li {
+        margin-bottom: 2rem;
+        font-size: 14px;
+        transition: $--mainTransition;
+        cursor: pointer;
+        &:hover {
+          color: $--mainLinkColorHover;
+        }
+      }
+    }
+    .socialMedia {
+      display: flex;
+      gap: 1em;
+    }
+    h3 {
+      font-size: 14px;
+      text-transform: uppercase;
+      font-weight: normal;
+      margin-bottom: 2rem;
+    }
+  }
+  .rightReserved {
+    text-align: center;
+    font-size: 17px;
+  }
+}
+@media (max-width: 992px) {
+  .footer {
+    .container {
+      display: flex;
+      flex-direction: row;
+      justify-content: space-between;
+      flex-wrap: wrap;
+
+      ul {
+        width: 40%;
+        text-align: center;
+      }
+    }
+  }
+}
+// ================= End Footer Section =================
